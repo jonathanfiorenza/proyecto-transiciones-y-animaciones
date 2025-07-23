@@ -5,3 +5,17 @@ body {
 }
 main {
     flex-grow: 1;}
+    /*transicion d color*/
+.item {
+    background-color: tomato;
+    width:200px ;
+    height: 200px;
+    transition-property: babackground-color;
+    transition-duration: 800ms;
+    transition-timing-function: cubic-bezier(0.88,-0.44, 0.32, 1.28);
+   /* transition-delay: 100ms; quiere decir q va  espear para hacer en efecto 100ms desde q pongo el maouse en la img*/
+}
+.item:hover {
+    background-color: lightblue;
+    
+}
