@@ -19,3 +19,11 @@ main {
     background-color: lightblue;
     
 }
+.parrafoamplio {
+transition: font-size 300ms ease-out; /*selecionamos la fon size para darle el efecto*/
+}
+.parrafoamplio:hover {
+    font-size: large;
+    cursor: pointer;
+    
+}
