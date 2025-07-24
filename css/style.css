@@ -27,3 +27,13 @@ transition: font-size 300ms ease-out; /*selecionamos la fon size para darle el e
     cursor: pointer;
     
 }
+.itemopacidad {
+    width: 200px; 
+    height: 100px;
+    background-color: lightcoral;
+    opacity: 0.5;
+    transition: opacity 200ms ease-in-out;
+}
+.itemopacidad:hover{
+    opacity: 1;
+}
