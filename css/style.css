@@ -37,3 +37,29 @@ transition: font-size 300ms ease-out; /*selecionamos la fon size para darle el e
 .itemopacidad:hover{
     opacity: 1;
 }
+.subrayado {
+position: relative;
+display: inline-block;
+
+
+
+}
+.subrayado:hover{
+cursor: pointer;
+
+}
+.subrayado::after {
+    content: ""; /*para pintar un linea siempre necesitamos un conten*/
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    background-color: chartreuse;
+    height: 2px;
+    transition: width 250ms ease-in;
+    
+}
+.subrayado:hover::after{
+width: 100%;
+
+}
