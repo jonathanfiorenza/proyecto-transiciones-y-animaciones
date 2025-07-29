@@ -105,3 +105,23 @@ transform:rotate(0deg);
 }
 
 }
+
+/*animacion d escala de mas grande a mas chica*/
+
+.escalarmundo {
+animation: escalar 2s ease infinite alternate-reverse;
+
+
+}
+@keyframes escalar { 
+0% {
+    transform: scale(1);/*este empieza normal tamano normal*/
+}    
+30% {
+    transform: scale(1.7); /*hace q se agrande el mundo*/
+}
+100% { transform: scale(0.5);} /*hace q se achique el mundo*/
+
+
+
+}
