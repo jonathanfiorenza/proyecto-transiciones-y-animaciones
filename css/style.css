@@ -63,3 +63,12 @@ cursor: pointer;
 width: 100%;
 
 }
+
+/*animaciones de movimiento*/
+.contenedoranimado {
+    width: 150px;
+    height: 50px;
+    background-color: lightgray;
+color: black;
+
+}
