@@ -87,4 +87,21 @@ to {
 transform: translateX(200px);
 }    
 
+
 }/*la palabra movimiento tiene q coincidir con la de arriba animation name paara q funcione*/
+
+
+/*animacion de rotacion*/
+.parraforotado {
+    animation: rotacion 2s linear infinite ;
+
+}
+@keyframes rotacion {
+0% {
+transform:rotate(0deg);
+}
+100% {
+    transform:rotate(360deg);
+}
+
+}
