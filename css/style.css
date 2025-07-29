@@ -70,5 +70,21 @@ width: 100%;
     height: 50px;
     background-color: lightgray;
 color: black;
+animation-name: movimento; /*con este la activamos a la animacaiones y el name "movimiento" es un nombre que  podemos inventar nosotros*/
+animation-duration: 4s ; /*hace q el ida y vuelta tarde por 4 segundos*/
+animation-timing-function: linear;
+animation-direction: alternate;/*hace q llegue hasta el final y vuelva de reversa*/
+animation-iteration-count: infinite; /*hace q se repita 3 ves el moviento de ida y vuelta o ponemos infiniti q es para q siempre este en movimento */
 
 }
+@keyframes movimento {
+from {
+    /*aqui nombre los valores de css que quiero q tenga la animacion en el incio*/
+transform: translateX(0);
+}
+to {
+    /*to signica al final de la animacion*/
+transform: translateX(200px);
+}    
+
+}/*la palabra movimiento tiene q coincidir con la de arriba animation name paara q funcione*/
