@@ -139,31 +139,39 @@ background-color: rgb(60, 60, 245);
 border-radius: 50% /* hacenis q el wid y heig tome forma de circulo usando border al 50*/;
 position: relative;
 animation: animacioncompleja 4s ease 5;
-
+transition: border-radius 200ms linear;
 }
 
 @keyframes animacioncompleja {
 0% { 
     top: 0px;
     left: 0px;
+    background-color: blue;
 }    
 25% {
     top: 0px;
     left: 100px;
+    background-color: blueviolet;
 }
 50% { 
     top: 100px;
     left: 100px;
-
+background-color: rgb(153, 100, 203);
 }
 75% {
 top: 100px;
 left: 0px;
+background-color: rgb(56, 56, 112);
 }
 
 100% {
-    top: 100px;
+    top: 0px;
     left: 0px;
+    background-color: rgb(60, 60, 245) ;
 }
 }
 
+/*aqui hacemos con transicion que el circulo del cuadrado vuelva a ser un cuadrado al pasar el mouse*/
+.circulo:hover {
+    border-radius: 0%;
+}
